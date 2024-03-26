@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image:url("https://64.media.tumblr.com/71844aa991a7621bff1208684fc0ce8d/d58adc710a86fa78-98/s2048x3072/a5f6fe2872c0d8086a195bb5b8fca3f07fb98b5f.jpg");
+        }
+    
+        .login-form {
+            background-color: #d95fd3;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+    
+        form input[type="text"],
+        form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #8d1818;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+    
+        form input[type="submit"],
+        form button {
+            width: 100%; /* Adjusted width to fill the container */
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #500bf3;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    
+        form input[type="submit"]:hover,
+        form button:hover {
+            background-color: #01408e;
+        }
+    
+        #login-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+    
+        #login-form {
+            background-color: #b241e6;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        #login-form h2 {
+            margin-bottom: 15px;
+        }
+    
+        #login-form button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #190fd7;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    
+        #login-form button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="login-container">
+        <div id="login-form">
+            <form action="hello.php" method="GET" class="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <input type="submit" value="Login">
+            </form>
+            <button onclick="f1()">Register</button>
+        </div>
+    </div>
+
+    <script>
+        function f1() {
+            window.location.href = "register.html";
+        }
+    </script>
+</body>
+</html>
